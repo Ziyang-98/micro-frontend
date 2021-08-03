@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:product": "cd app1  && npm start",
+    "start:product1": "cd app1  && npm start",
+    "start:product2": "cd app2  && npm start",
     "start:main": "webpack-dev-server",
     "start": "npm-run-all --parallel start:*",
     "start:main-m": "cross-env MODE=multiple webpack-dev-server",
-    "start:multiple": "run-p start:main-m start:product",
+    "start:multiple": "run-p start:main-m start:product1 start:product2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
